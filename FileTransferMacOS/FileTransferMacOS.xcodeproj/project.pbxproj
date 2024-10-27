@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		5FC967F42CCDA06D003BEE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC967DA2CCDA06C003BEE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC967E12CCDA06C003BEE63;
+			remoteInfo = FileTransferMacOS;
+		};
+		5FC967FE2CCDA06D003BEE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC967DA2CCDA06C003BEE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC967E12CCDA06C003BEE63;
+			remoteInfo = FileTransferMacOS;
+		};
+		5FC968242CCDA08E003BEE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC967DA2CCDA06C003BEE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC968132CCDA08D003BEE63;
+			remoteInfo = FileTransferClientIOS;
+		};
+		5FC9682E2CCDA08E003BEE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC967DA2CCDA06C003BEE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC968132CCDA08D003BEE63;
+			remoteInfo = FileTransferClientIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FC967E22CCDA06C003BEE63 /* FileTransferMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileTransferMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC967F32CCDA06D003BEE63 /* FileTransferMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileTransferMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC967FD2CCDA06D003BEE63 /* FileTransferMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileTransferMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC968142CCDA08D003BEE63 /* FileTransferClientIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileTransferClientIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC968232CCDA08E003BEE63 /* FileTransferClientIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileTransferClientIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC9682D2CCDA08E003BEE63 /* FileTransferClientIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileTransferClientIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5FC967E42CCDA06C003BEE63 /* FileTransferMacOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FileTransferMacOS;
+			sourceTree = "<group>";
+		};
+		5FC967F62CCDA06D003BEE63 /* FileTransferMacOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FileTransferMacOSTests;
+			sourceTree = "<group>";
+		};
+		5FC968002CCDA06D003BEE63 /* FileTransferMacOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FileTransferMacOSUITests;
+			sourceTree = "<group>";
+		};
+		5FC968152CCDA08D003BEE63 /* FileTransferClientIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FileTransferClientIOS;
+			sourceTree = "<group>";
+		};
+		5FC968262CCDA08E003BEE63 /* FileTransferClientIOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FileTransferClientIOSTests;
+			sourceTree = "<group>";
+		};
+		5FC968302CCDA08E003BEE63 /* FileTransferClientIOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FileTransferClientIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FC967DF2CCDA06C003BEE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC967F02CCDA06D003BEE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC967FA2CCDA06D003BEE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC968112CCDA08D003BEE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC968202CCDA08E003BEE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC9682A2CCDA08E003BEE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FC967D92CCDA06C003BEE63 = {
+			isa = PBXGroup;
+			children = (
+				5FC968152CCDA08D003BEE63 /* FileTransferClientIOS */,
+				5FC968262CCDA08E003BEE63 /* FileTransferClientIOSTests */,
+				5FC968302CCDA08E003BEE63 /* FileTransferClientIOSUITests */,
+				5FC967E42CCDA06C003BEE63 /* FileTransferMacOS */,
+				5FC967F62CCDA06D003BEE63 /* FileTransferMacOSTests */,
+				5FC968002CCDA06D003BEE63 /* FileTransferMacOSUITests */,
+				5FC967E32CCDA06C003BEE63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FC967E32CCDA06C003BEE63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FC967E22CCDA06C003BEE63 /* FileTransferMacOS.app */,
+				5FC967F32CCDA06D003BEE63 /* FileTransferMacOSTests.xctest */,
+				5FC967FD2CCDA06D003BEE63 /* FileTransferMacOSUITests.xctest */,
+				5FC968142CCDA08D003BEE63 /* FileTransferClientIOS.app */,
+				5FC968232CCDA08E003BEE63 /* FileTransferClientIOSTests.xctest */,
+				5FC9682D2CCDA08E003BEE63 /* FileTransferClientIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FC967E12CCDA06C003BEE63 /* FileTransferMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC968072CCDA06D003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferMacOS" */;
+			buildPhases = (
+				5FC967DE2CCDA06C003BEE63 /* Sources */,
+				5FC967DF2CCDA06C003BEE63 /* Frameworks */,
+				5FC967E02CCDA06C003BEE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5FC967E42CCDA06C003BEE63 /* FileTransferMacOS */,
+			);
+			name = FileTransferMacOS;
+			packageProductDependencies = (
+			);
+			productName = FileTransferMacOS;
+			productReference = 5FC967E22CCDA06C003BEE63 /* FileTransferMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FC967F22CCDA06D003BEE63 /* FileTransferMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC9680A2CCDA06D003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferMacOSTests" */;
+			buildPhases = (
+				5FC967EF2CCDA06D003BEE63 /* Sources */,
+				5FC967F02CCDA06D003BEE63 /* Frameworks */,
+				5FC967F12CCDA06D003BEE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC967F52CCDA06D003BEE63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5FC967F62CCDA06D003BEE63 /* FileTransferMacOSTests */,
+			);
+			name = FileTransferMacOSTests;
+			packageProductDependencies = (
+			);
+			productName = FileTransferMacOSTests;
+			productReference = 5FC967F32CCDA06D003BEE63 /* FileTransferMacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FC967FC2CCDA06D003BEE63 /* FileTransferMacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC9680D2CCDA06D003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferMacOSUITests" */;
+			buildPhases = (
+				5FC967F92CCDA06D003BEE63 /* Sources */,
+				5FC967FA2CCDA06D003BEE63 /* Frameworks */,
+				5FC967FB2CCDA06D003BEE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC967FF2CCDA06D003BEE63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5FC968002CCDA06D003BEE63 /* FileTransferMacOSUITests */,
+			);
+			name = FileTransferMacOSUITests;
+			packageProductDependencies = (
+			);
+			productName = FileTransferMacOSUITests;
+			productReference = 5FC967FD2CCDA06D003BEE63 /* FileTransferMacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5FC968132CCDA08D003BEE63 /* FileTransferClientIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC968352CCDA08E003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferClientIOS" */;
+			buildPhases = (
+				5FC968102CCDA08D003BEE63 /* Sources */,
+				5FC968112CCDA08D003BEE63 /* Frameworks */,
+				5FC968122CCDA08D003BEE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5FC968152CCDA08D003BEE63 /* FileTransferClientIOS */,
+			);
+			name = FileTransferClientIOS;
+			packageProductDependencies = (
+			);
+			productName = FileTransferClientIOS;
+			productReference = 5FC968142CCDA08D003BEE63 /* FileTransferClientIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FC968222CCDA08E003BEE63 /* FileTransferClientIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC968382CCDA08E003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferClientIOSTests" */;
+			buildPhases = (
+				5FC9681F2CCDA08E003BEE63 /* Sources */,
+				5FC968202CCDA08E003BEE63 /* Frameworks */,
+				5FC968212CCDA08E003BEE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC968252CCDA08E003BEE63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5FC968262CCDA08E003BEE63 /* FileTransferClientIOSTests */,
+			);
+			name = FileTransferClientIOSTests;
+			packageProductDependencies = (
+			);
+			productName = FileTransferClientIOSTests;
+			productReference = 5FC968232CCDA08E003BEE63 /* FileTransferClientIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FC9682C2CCDA08E003BEE63 /* FileTransferClientIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC9683B2CCDA08E003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferClientIOSUITests" */;
+			buildPhases = (
+				5FC968292CCDA08E003BEE63 /* Sources */,
+				5FC9682A2CCDA08E003BEE63 /* Frameworks */,
+				5FC9682B2CCDA08E003BEE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC9682F2CCDA08E003BEE63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5FC968302CCDA08E003BEE63 /* FileTransferClientIOSUITests */,
+			);
+			name = FileTransferClientIOSUITests;
+			packageProductDependencies = (
+			);
+			productName = FileTransferClientIOSUITests;
+			productReference = 5FC9682D2CCDA08E003BEE63 /* FileTransferClientIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FC967DA2CCDA06C003BEE63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					5FC967E12CCDA06C003BEE63 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					5FC967F22CCDA06D003BEE63 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5FC967E12CCDA06C003BEE63;
+					};
+					5FC967FC2CCDA06D003BEE63 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5FC967E12CCDA06C003BEE63;
+					};
+					5FC968132CCDA08D003BEE63 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					5FC968222CCDA08E003BEE63 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5FC968132CCDA08D003BEE63;
+					};
+					5FC9682C2CCDA08E003BEE63 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5FC968132CCDA08D003BEE63;
+					};
+				};
+			};
+			buildConfigurationList = 5FC967DD2CCDA06C003BEE63 /* Build configuration list for PBXProject "FileTransferMacOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FC967D92CCDA06C003BEE63;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5FC967E32CCDA06C003BEE63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FC967E12CCDA06C003BEE63 /* FileTransferMacOS */,
+				5FC967F22CCDA06D003BEE63 /* FileTransferMacOSTests */,
+				5FC967FC2CCDA06D003BEE63 /* FileTransferMacOSUITests */,
+				5FC968132CCDA08D003BEE63 /* FileTransferClientIOS */,
+				5FC968222CCDA08E003BEE63 /* FileTransferClientIOSTests */,
+				5FC9682C2CCDA08E003BEE63 /* FileTransferClientIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FC967E02CCDA06C003BEE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC967F12CCDA06D003BEE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC967FB2CCDA06D003BEE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC968122CCDA08D003BEE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC968212CCDA08E003BEE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC9682B2CCDA08E003BEE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FC967DE2CCDA06C003BEE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC967EF2CCDA06D003BEE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC967F92CCDA06D003BEE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC968102CCDA08D003BEE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC9681F2CCDA08E003BEE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC968292CCDA08E003BEE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FC967F52CCDA06D003BEE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC967E12CCDA06C003BEE63 /* FileTransferMacOS */;
+			targetProxy = 5FC967F42CCDA06D003BEE63 /* PBXContainerItemProxy */;
+		};
+		5FC967FF2CCDA06D003BEE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC967E12CCDA06C003BEE63 /* FileTransferMacOS */;
+			targetProxy = 5FC967FE2CCDA06D003BEE63 /* PBXContainerItemProxy */;
+		};
+		5FC968252CCDA08E003BEE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC968132CCDA08D003BEE63 /* FileTransferClientIOS */;
+			targetProxy = 5FC968242CCDA08E003BEE63 /* PBXContainerItemProxy */;
+		};
+		5FC9682F2CCDA08E003BEE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC968132CCDA08D003BEE63 /* FileTransferClientIOS */;
+			targetProxy = 5FC9682E2CCDA08E003BEE63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5FC968052CCDA06D003BEE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FC968062CCDA06D003BEE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5FC968082CCDA06D003BEE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FileTransferMacOS/FileTransferMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileTransferMacOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5FC968092CCDA06D003BEE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FileTransferMacOS/FileTransferMacOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileTransferMacOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5FC9680B2CCDA06D003BEE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileTransferMacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileTransferMacOS";
+			};
+			name = Debug;
+		};
+		5FC9680C2CCDA06D003BEE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileTransferMacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileTransferMacOS";
+			};
+			name = Release;
+		};
+		5FC9680E2CCDA06D003BEE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FileTransferMacOS;
+			};
+			name = Debug;
+		};
+		5FC9680F2CCDA06D003BEE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferMacOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FileTransferMacOS;
+			};
+			name = Release;
+		};
+		5FC968362CCDA08E003BEE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileTransferClientIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferClientIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FC968372CCDA08E003BEE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileTransferClientIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferClientIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FC968392CCDA08E003BEE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferClientIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileTransferClientIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileTransferClientIOS";
+			};
+			name = Debug;
+		};
+		5FC9683A2CCDA08E003BEE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferClientIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileTransferClientIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileTransferClientIOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FC9683C2CCDA08E003BEE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferClientIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FileTransferClientIOS;
+			};
+			name = Debug;
+		};
+		5FC9683D2CCDA08E003BEE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Self.FileTransferClientIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FileTransferClientIOS;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FC967DD2CCDA06C003BEE63 /* Build configuration list for PBXProject "FileTransferMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC968052CCDA06D003BEE63 /* Debug */,
+				5FC968062CCDA06D003BEE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC968072CCDA06D003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC968082CCDA06D003BEE63 /* Debug */,
+				5FC968092CCDA06D003BEE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC9680A2CCDA06D003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC9680B2CCDA06D003BEE63 /* Debug */,
+				5FC9680C2CCDA06D003BEE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC9680D2CCDA06D003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferMacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC9680E2CCDA06D003BEE63 /* Debug */,
+				5FC9680F2CCDA06D003BEE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC968352CCDA08E003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferClientIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC968362CCDA08E003BEE63 /* Debug */,
+				5FC968372CCDA08E003BEE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC968382CCDA08E003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferClientIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC968392CCDA08E003BEE63 /* Debug */,
+				5FC9683A2CCDA08E003BEE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC9683B2CCDA08E003BEE63 /* Build configuration list for PBXNativeTarget "FileTransferClientIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC9683C2CCDA08E003BEE63 /* Debug */,
+				5FC9683D2CCDA08E003BEE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FC967DA2CCDA06C003BEE63 /* Project object */;
+}

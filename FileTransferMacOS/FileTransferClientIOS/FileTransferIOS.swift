@@ -1,9 +1,6 @@
-//
-//  FileTransferIOS.swift
-//  FileTransferMacOS
-//
-//  Created by Sichen Lin on 10/26/24.
-//
+// FileTransferIOS.swift
+// FileTransferMacOS
+// Created by Sichen Lin on 10/26/24.
 
 import UIKit
 import UniformTypeIdentifiers
@@ -16,6 +13,8 @@ enum FileTransferError: Error {
 class FileTransferIOS: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     static let shared = FileTransferIOS()
     var completion: ((Result<URL, Error>) -> Void)?
+
+    let serverURL = "http://172.20.10.117:8080/receive-video"
 
     func selectVideo(viewController: UIViewController, completion: @escaping (Result<URL, Error>) -> Void) {
         self.completion = completion
@@ -35,8 +34,8 @@ class FileTransferIOS: NSObject, UINavigationControllerDelegate, UIImagePickerCo
         }
     }
 
-    func sendVideoMultipart(to urlString: String, videoUrl: URL, completion: @escaping (Result<String, Error>) -> Void) {
-        guard let url = URL(string: urlString) else {
+    func sendVideoMultipart(videoUrl: URL, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: serverURL) else {
             completion(.failure(FileTransferError.networkError(description: "Invalid URL")))
             return
         }

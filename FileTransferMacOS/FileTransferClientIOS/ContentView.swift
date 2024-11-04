@@ -26,12 +26,12 @@ struct ContentView: View {
             .sheet(isPresented: $isShowingPicker) {
                 VideoPicker { videoUrl in
                     if let videoUrl = videoUrl {
-                        FileTransferIOS.shared.sendVideoMultipart(to: "http://localhost:8080/receive-video", videoUrl: videoUrl) { result in
+                        FileTransferIOS.shared.sendVideoMultipart(videoUrl: videoUrl) { result in
                             switch result {
                             case .success(let message):
                                 self.message = message
                             case .failure(let error):
-                                self.message = "Error sending video: \(error)"
+                                self.message = "Error sending video: \(error.localizedDescription)"
                             }
                         }
                     }

@@ -33,8 +33,11 @@ class FileTransferMacOS: NSObject {
                 }
 
                 let timestamp = Int(Date().timeIntervalSince1970)
-                let filename = "receivedVideo-\(timestamp).mp4"
                 let downloadsDir = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
+
+                // 从数据中获取原始文件名，如果没有就用默认名
+                let originalName = "receivedVideo"
+                let filename = "\(originalName)-\(timestamp).mp4"
                 let fileURL = downloadsDir.appendingPathComponent(filename)
 
                 do {
@@ -65,3 +68,4 @@ class FileTransferMacOS: NSObject {
         }
     }
 }
+

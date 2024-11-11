@@ -72,8 +72,9 @@ class FileTransferIOS: NSObject, UINavigationControllerDelegate, UIImagePickerCo
                 return
             }
             do {
-                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any], let responseNumber = json["responseNumber"] as? Int {
-                    completion(.success("Video uploaded successfully! Response Number: \(responseNumber)"))
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any], let responseNumbers = json["responseNumbers"] as? [String] {
+                    let responseMessage = responseNumbers.joined(separator: ", ")
+                    completion(.success("Video uploaded successfully! Response Numbers: \(responseMessage)"))
                 } else {
                     completion(.failure(FileTransferError.networkError(description: "Invalid server response")))
                 }

@@ -2,13 +2,14 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct ContentView: View {
-    @State private var messages: [String] = []
+    @State private var ejectionFractionText: String = ""
+    @State private var coordinates: [String] = []
     @State private var isShowingPicker = false
 
     var body: some View {
         NavigationView {
             ZStack {
-                Color.black.edgesIgnoringSafeArea(.all)  // 设置黑色背景
+                Color.black.edgesIgnoringSafeArea(.all)
 
                 VStack(spacing: 20) {
                     Spacer()
@@ -17,7 +18,7 @@ struct ContentView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                        .padding(.bottom, 20)
+                        .padding(.top, 20)
 
                     Button(action: {
                         isShowingPicker = true
@@ -30,50 +31,74 @@ struct ContentView: View {
                             .foregroundColor(.black)
                             .cornerRadius(12)
                             .shadow(radius: 10)
-                            .padding(.horizontal, 20)
                     }
+                    .padding(.horizontal, 20)
                     .sheet(isPresented: $isShowingPicker) {
                         VideoPicker { videoUrl in
                             if let videoUrl = videoUrl {
                                 FileTransferIOS.shared.sendVideoMultipart(videoUrl: videoUrl) { result in
                                     switch result {
-                                    case .success(let message):
-                                        self.messages = message.components(separatedBy: ", ")
+                                    case .success(let json):
+                                        parseResponse(json)
                                     case .failure(let error):
-                                        self.messages = ["Error: \(error.localizedDescription)"]
+                                        self.ejectionFractionText = "Error: \(error.localizedDescription)"
+                                        self.coordinates = []
                                     }
                                 }
                             }
                         }
                     }
 
-                    if !messages.isEmpty {
-                        VStack(alignment: .center, spacing: 5) {
-                            ForEach(messages, id: \.self) { message in
-                                Text(message)
-                                    .padding()
-                                    .frame(maxWidth: .infinity)
-                                    .background(Color(hex: "#FEBD2B"))
-                                    .foregroundColor(.black)
-                            }
-                        }
-                        .padding(.horizontal, 20)
+                    if !ejectionFractionText.isEmpty {
+                        Text(ejectionFractionText)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color(hex: "#FEBD2B"))
+                            .foregroundColor(.black)
+                            .cornerRadius(8)
+                            .padding(.horizontal, 20)
+                    }
 
-                        Button("Clear Data") {
-                            self.messages.removeAll()
-                        }
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.red)
-                        .cornerRadius(10)
-                        .shadow(radius: 5)
-                        .padding(.bottom, 20)
+                    ForEach(Array(coordinates.enumerated()), id: \.element) { index, coordinate in
+                        Text("位点\(index + 1): \(coordinate)")
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color(hex: "#FEBD2B"))
+                            .foregroundColor(.black)
+                            .cornerRadius(8)
+                            .padding(.horizontal, 20)
                     }
 
                     Spacer()
+                    
+                    Button("Clear Data") {
+                        self.ejectionFractionText = ""
+                        self.coordinates.removeAll()
+                    }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.red)
+                    .cornerRadius(10)
+                    .shadow(radius: 5)
                 }
+                .padding(.horizontal, 20)
             }
             .navigationBarHidden(true)
+        }
+    }
+
+    func parseResponse(_ response: [String: Any]) {
+        if let ejectionFraction = response["ejectionFraction"] as? Int,
+           let pacingRequired = response["pacingRequired"] as? Bool {
+            self.ejectionFractionText = "Ejection Fraction: \(ejectionFraction)\(pacingRequired ? " 需起搏" : "")"
+        }
+
+        if let coordinatesArray = response["coordinates"] as? [[String: String]] {
+            self.coordinates = coordinatesArray.enumerated().map { index, coord in
+                let x = coord["x"] ?? "0"
+                let y = coord["y"] ?? "0"
+                return "(\(x), \(y))"
+            }
         }
     }
 }

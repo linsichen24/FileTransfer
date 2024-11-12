@@ -1,7 +1,3 @@
-// FileTransferIOS.swift
-// FileTransferMacOS
-// Created by Sichen Lin on 10/26/24.
-
 import UIKit
 import UniformTypeIdentifiers
 
@@ -12,11 +8,11 @@ enum FileTransferError: Error {
 
 class FileTransferIOS: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     static let shared = FileTransferIOS()
-    var completion: ((Result<URL, Error>) -> Void)?
+    var completion: ((Result<[String: Any], Error>) -> Void)?
 
     let serverURL = "http://172.20.10.117:8080/receive-video"
 
-    func selectVideo(viewController: UIViewController, completion: @escaping (Result<URL, Error>) -> Void) {
+    func selectVideo(viewController: UIViewController, completion: @escaping (Result<[String: Any], Error>) -> Void) {
         self.completion = completion
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
@@ -28,13 +24,13 @@ class FileTransferIOS: NSObject, UINavigationControllerDelegate, UIImagePickerCo
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         picker.dismiss(animated: true, completion: nil)
         if let videoUrl = info[.mediaURL] as? URL {
-            self.completion?(.success(videoUrl))
+            self.completion?(.success(["url": videoUrl]))
         } else {
             self.completion?(.failure(FileTransferError.fileIOError(description: "Failed to select video")))
         }
     }
 
-    func sendVideoMultipart(videoUrl: URL, completion: @escaping (Result<String, Error>) -> Void) {
+    func sendVideoMultipart(videoUrl: URL, completion: @escaping (Result<[String: Any], Error>) -> Void) {
         guard let url = URL(string: serverURL) else {
             completion(.failure(FileTransferError.networkError(description: "Invalid URL")))
             return
@@ -56,6 +52,7 @@ class FileTransferIOS: NSObject, UINavigationControllerDelegate, UIImagePickerCo
             let videoData = try Data(contentsOf: videoUrl)
             body.append(videoData)
         } catch {
+            print("Error reading video data:", error)
             completion(.failure(FileTransferError.fileIOError(description: "Failed to read video data")))
             return
         }
@@ -64,21 +61,33 @@ class FileTransferIOS: NSObject, UINavigationControllerDelegate, UIImagePickerCo
 
         let task = URLSession.shared.uploadTask(with: request, from: body) { data, response, error in
             if let error = error {
-                completion(.failure(error))
+                print("Network error:", error)
+                completion(.failure(FileTransferError.networkError(description: error.localizedDescription)))
                 return
             }
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200, let data = data else {
-                completion(.failure(FileTransferError.networkError(description: "Failed to upload video")))
+            
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                print("Server error or invalid status code")
+                completion(.failure(FileTransferError.networkError(description: "Server error with status code \((response as? HTTPURLResponse)?.statusCode ?? -1)")))
                 return
             }
+            
+            guard let data = data else {
+                print("No data received from server")
+                completion(.failure(FileTransferError.networkError(description: "No data received from server")))
+                return
+            }
+            
             do {
-                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any], let responseNumbers = json["responseNumbers"] as? [String] {
-                    let responseMessage = responseNumbers.joined(separator: ", ")
-                    completion(.success("Video uploaded successfully! Response Numbers: \(responseMessage)"))
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    print("Server response JSON:", json)
+                    completion(.success(json))
                 } else {
-                    completion(.failure(FileTransferError.networkError(description: "Invalid server response")))
+                    print("Failed to parse JSON object")
+                    completion(.failure(FileTransferError.networkError(description: "Failed to parse server response")))
                 }
             } catch {
+                print("JSON serialization error:", error)
                 completion(.failure(FileTransferError.networkError(description: "Failed to parse server response")))
             }
         }
